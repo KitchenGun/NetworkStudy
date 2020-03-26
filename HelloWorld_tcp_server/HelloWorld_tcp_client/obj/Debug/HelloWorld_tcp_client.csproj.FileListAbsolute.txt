@@ -1,0 +1,7 @@
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\bin\Debug\HelloWorld_tcp_client.exe.config
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\bin\Debug\HelloWorld_tcp_client.exe
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\bin\Debug\HelloWorld_tcp_client.pdb
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\obj\Debug\HelloWorld_tcp_client.csprojAssemblyReference.cache
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\obj\Debug\HelloWorld_tcp_client.csproj.CoreCompileInputs.cache
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\obj\Debug\HelloWorld_tcp_client.exe
+D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_client\obj\Debug\HelloWorld_tcp_client.pdb
