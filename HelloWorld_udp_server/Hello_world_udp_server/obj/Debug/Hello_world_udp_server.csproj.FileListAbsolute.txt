@@ -1,0 +1,7 @@
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\bin\Debug\Hello_world_udp_server.exe.config
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\bin\Debug\Hello_world_udp_server.exe
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\bin\Debug\Hello_world_udp_server.pdb
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\obj\Debug\Hello_world_udp_server.csproj.CoreCompileInputs.cache
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\obj\Debug\Hello_world_udp_server.exe
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\obj\Debug\Hello_world_udp_server.pdb
+D:\Git\Network\HelloWorld_udp_server\Hello_world_udp_server\obj\Debug\Hello_world_udp_server.csprojAssemblyReference.cache
