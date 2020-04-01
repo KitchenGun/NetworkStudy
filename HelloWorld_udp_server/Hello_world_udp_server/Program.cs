@@ -30,10 +30,11 @@ namespace Hello_world_udp_server
                 while(i<100)
                 {
                     Thread.Sleep(2000);
-                    Console.WriteLine(message);
+                    string msg = message + (++i);
+                    Console.WriteLine(msg);
 
                     bytes = null;
-                    bytes = Encoding.UTF8.GetBytes(message);
+                    bytes = Encoding.UTF8.GetBytes(msg);
 
                     sender.Send(bytes, bytes.Length, groupEP);
                     i++;
