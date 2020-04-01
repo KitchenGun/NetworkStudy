@@ -1,6 +1,0 @@
-D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_server\bin\Release\HelloWorld_tcp_server.exe.config
-D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_server\bin\Release\HelloWorld_tcp_server.exe
-D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_server\bin\Release\HelloWorld_tcp_server.pdb
-D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_server\obj\Release\HelloWorld_tcp_server.csproj.CoreCompileInputs.cache
-D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_server\obj\Release\HelloWorld_tcp_server.exe
-D:\Git\Network\HelloWorld_tcp_server\HelloWorld_tcp_server\obj\Release\HelloWorld_tcp_server.pdb
