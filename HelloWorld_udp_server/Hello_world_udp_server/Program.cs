@@ -37,7 +37,6 @@ namespace Hello_world_udp_server
                     bytes = Encoding.UTF8.GetBytes(msg);
 
                     sender.Send(bytes, bytes.Length, groupEP);
-                    i++;
 
                 }
                 sender.Close();
