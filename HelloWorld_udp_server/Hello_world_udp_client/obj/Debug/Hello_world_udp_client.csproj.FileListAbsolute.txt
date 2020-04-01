@@ -1,0 +1,7 @@
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\bin\Debug\Hello_world_udp_client.exe.config
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\bin\Debug\Hello_world_udp_client.exe
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\bin\Debug\Hello_world_udp_client.pdb
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\obj\Debug\Hello_world_udp_client.csprojAssemblyReference.cache
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\obj\Debug\Hello_world_udp_client.csproj.CoreCompileInputs.cache
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\obj\Debug\Hello_world_udp_client.exe
+C:\Users\강건\Documents\GitHub\NetworkStudy\HelloWorld_udp_server\Hello_world_udp_client\obj\Debug\Hello_world_udp_client.pdb
