@@ -18,25 +18,25 @@ namespace Hello_world_udp_server
         {
             try
             {
-                string message = "hello";
+                string message = "hello";//출력할 메세지
                 UdpClient sender = new UdpClient();
                 sender.JoinMulticastGroup(GroupAddress);
 
                 IPEndPoint groupEP = new IPEndPoint(GroupAddress, GroupPort);
 
-                byte[] bytes = new byte[1024];
+                byte[] bytes = new byte[1024];//버퍼
 
                 int i = 0;
-                while(i<100)
+                while(i<100)//메세지 전송횟수
                 {
-                    Thread.Sleep(2000);
-                    string msg = message + (++i);
-                    Console.WriteLine(msg);
+                    Thread.Sleep(2000);//대기 시간
+                    string msg = message + (++i);//카운트 증가
+                    Console.WriteLine(msg);//출력
 
-                    bytes = null;
+                    bytes = null;//바이트로 변환
                     bytes = Encoding.UTF8.GetBytes(msg);
 
-                    sender.Send(bytes, bytes.Length, groupEP);
+                    sender.Send(bytes, bytes.Length, groupEP);//전송
 
                 }
                 sender.Close();
