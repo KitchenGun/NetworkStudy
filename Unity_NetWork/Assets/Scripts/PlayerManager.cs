@@ -40,6 +40,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks,IPunObservable
 
     private void Start()
     {
+      
         CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
         if(_cameraWork!=null)
         {
@@ -57,7 +58,6 @@ public class PlayerManager : MonoBehaviourPunCallbacks,IPunObservable
         {
             this.CalledOnLevelWasLoaded(scene.buildIndex);
         };
-
         SetupUI();
     }
     //void OnLevelWasLoaded(int level)
@@ -67,7 +67,7 @@ public class PlayerManager : MonoBehaviourPunCallbacks,IPunObservable
     private void CalledOnLevelWasLoaded(int level)
     {//레벨이 바뀔때 실행
         Debug.Log("level was loaded");
-        SetupUI();
+        
         try
         {
             if (!Physics.Raycast(transform.position, -Vector3.up, 5f))
@@ -86,8 +86,12 @@ public class PlayerManager : MonoBehaviourPunCallbacks,IPunObservable
     {
         if (playerUIPrefab != null && photonView.IsMine)
         {//ui가 없을 경우
-            GameObject _uiGo = Instantiate(playerUIPrefab);
+            //playerUIPrefab = Resources.Load<GameObject>("PlayerUI");
+            GameObject _uiGo = playerUIPrefab;
+            _uiGo.GetComponent<PlayerUI>();
             _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+            //this.playerUIPrefab.GetComponent<PlayerUI>();
+            //this.playerUIPrefab.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
         }
         else
         {
