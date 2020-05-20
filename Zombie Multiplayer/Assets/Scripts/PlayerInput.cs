@@ -35,12 +35,14 @@ public class PlayerInput : MonoBehaviourPun {
         }
 
         // move에 관한 입력 감지
-        move = Input.GetAxis(moveAxisName);
+        move = Input.GetAxis(moveAxisName);//-1.0~1.0
         // rotate에 관한 입력 감지
-        rotate = Input.GetAxis(rotateAxisName);
+        rotate = Input.GetAxis(rotateAxisName);//-1.0~1.0
         // fire에 관한 입력 감지
         fire = Input.GetButton(fireButtonName);
         // reload에 관한 입력 감지
         reload = Input.GetButtonDown(reloadButtonName);
+       //Input.GetAxisRaw(moveAxisName);
+       //Input.GetJoystickNames()
     }
 }

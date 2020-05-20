@@ -30,7 +30,7 @@ public class LivingEntity : MonoBehaviourPun, IDamageable {
     // 호스트에서 먼저 단독 실행되고, 호스트를 통해 다른 클라이언트들에서 일괄 실행됨
     [PunRPC]
     public virtual void OnDamage(float damage, Vector3 hitPoint, Vector3 hitNormal) {
-        if (PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient)//호스트라면
         {
             // 데미지만큼 체력 감소
             health -= damage;
@@ -67,7 +67,7 @@ public class LivingEntity : MonoBehaviourPun, IDamageable {
             // 서버에서 클라이언트로 동기화
             photonView.RPC("ApplyUpdatedHealth", RpcTarget.Others, health, dead);
 
-            // 다른 클라이언트들도 RestoreHealth를 실행하도록 함
+            // 다른 클라이언트들도 RestoreHealth함수를 실행하도록 함
             photonView.RPC("RestoreHealth", RpcTarget.Others, newHealth);
         }
     }
