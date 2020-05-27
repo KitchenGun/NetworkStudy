@@ -4,6 +4,7 @@ using ExitGames.Client.Photon;
 using Photon.Pun;
 using UnityEngine;
 
+//====================================직렬화 이벤트 호출
 
 // 적 게임 오브젝트를 주기적으로 생성
 public class EnemySpawner : MonoBehaviourPun, IPunObservable {
@@ -21,7 +22,7 @@ public class EnemySpawner : MonoBehaviourPun, IPunObservable {
 
     public Color strongEnemyColor = Color.red; // 강한 적 AI가 가지게 될 피부색
 
-    private List<Enemy> enemies = new List<Enemy>(); // 생성된 적들을 담는 리스트
+    private List<Enemy> enemies = new List<Enemy>(); // 생성된 적들을 담는 리스트 
 
     private int enemyCount = 0; // 남은 적의 수
     private int wave; // 현재 웨이브
@@ -93,13 +94,13 @@ public class EnemySpawner : MonoBehaviourPun, IPunObservable {
         wave++;
 
         // 현재 웨이브 * 1.5에 반올림 한 개수 만큼 적을 생성
-        int spawnCount = Mathf.RoundToInt(wave * 1.5f);
+        int spawnCount = Mathf.RoundToInt(wave * 1.5f);//반올림이 아닌 버림을 사용함
 
         // spawnCount 만큼 적을 생성
         for (int i = 0; i < spawnCount; i++)
         {
             // 적의 세기를 0%에서 100% 사이에서 랜덤 결정
-            float enemyIntensity = Random.Range(0f, 1f);
+            float enemyIntensity = Random.Range(0f, 1f);//[0f,1f] :0f이상 1f 이하//(0,100) : 0 이상 그리고 100미만
             // 적 생성 처리 실행
             CreateEnemy(enemyIntensity);
         }
